@@ -238,3 +238,8 @@ output "fleet_membership" {
   description = "Fleet membership (if registered)"
   value       = local.fleet_membership
 }
+
+output "terragrunt_source_ref" {
+  description = "Debug: source ref propagated from Terragrunt."
+  value       = var.terragrunt_source_ref
+}

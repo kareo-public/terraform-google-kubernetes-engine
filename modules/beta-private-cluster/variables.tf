@@ -1006,3 +1006,10 @@ variable "dns_allow_external_traffic" {
   type        = bool
   default     = null
 }
+
+
+variable "terragrunt_source_ref" {
+  description = "Debug: what Terragrunt/template thinks it is applying (branch/commit/module ref)."
+  type        = string
+  default     = ""
+}
