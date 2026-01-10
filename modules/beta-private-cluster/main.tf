@@ -37,7 +37,7 @@ resource "random_shuffle" "available_zones" {
 
 locals {
   // ID of the cluster
-  cluster_id = google_container_cluster.primary.idaaaa
+  cluster_id = google_container_cluster.primary.id
 
   // location
   location = var.regional ? var.region : var.zones[0]
